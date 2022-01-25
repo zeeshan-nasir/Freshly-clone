@@ -1,135 +1,86 @@
-h1 {
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    border: grey 1px solid;
-    padding: 20px 20px 35px;
-    border-radius: 5px;
-}
-
-label {
-    margin-bottom: -10px;
-    padding-left: 3px;
-}
-
-#bigText {
-    font-size: 1.7em;
-    margin-bottom: 10px;
-}
-
-input {
-    height: 25px;
-}
-
-#btn {
-    height: 35px;
-    background-color: rgb(42, 109, 255);
-    color: white;
-    border-radius: 7px;
-    cursor: pointer;
-    border: 1px solid rgb(42, 109, 255);
-    font-size: 14px;
-}
-
-#btn:hover {
-    transform: translateX(2px) translateY(-2px);
-    transition: transform 0.4s;
-  }
-
-
-/* ~~~~~~~~~~~~~~PAYMENT~~~~~~~~~~~~~~ */
-
-#cvv {
-    width: 50px;
-    margin: 0px 20px 0px 8px;
-    height: 25px;
-}
-
-#date {
-    width: 140px;
-    margin-left: 10px;
-    height: 28px;
-}
-
 body {
-    margin: 0px;
-    width: 100%;
-    font-family: sans-serif;
-    background-color: rgb(255, 253, 247);
+  margin: 0px;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: rgb(255, 253, 247);
 }
+
+/* Navbar */
 
 .navbar {
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 90px 15px 75px;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    height: 64px;
-    z-index: 1;
+  width: 100%;
+  background-color: white;
+  height: 64px;
 }
 
 #navImg {
-    height: 27px;
-    width: 116px;
+  height: 64px;
+  width: 150px;
+  margin: auto;
 }
 
-#navLinks {
-    margin-top: -2px;
-    width: 40%;
-    text-align: center;
-    color: rgb(208, 208, 208);
-    font-size: 0.85em;
-    font-weight: 550;
-    margin-left: 35px;
+/* Payment container  */
+
+.container {
+  width: 30%;
+  margin: auto;
+  background-color: white;
+  margin-top: 5%;
+  padding: 15px;
+  border: 1px solid rgb(173, 173, 173);
 }
 
-#setup {
-    color: rgb(42, 109, 255);
-    display: flex;
+.container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px 35px;
+  border-radius: 5px;
 }
 
-#sign {
-    border: 2px rgb(64, 121, 245) solid;
-    margin-top: 5px;
-    margin-right: 7px;
-    height: 21px;
-    width: 21px;
-    padding-left: 4px;
-    padding-top: 1px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    font-size: 0.9em;
-    font-weight: bold;
+#btmDiv {
+  display: flex;
+  justify-content: space-between;
 }
 
-#support {
-    text-decoration: underline;
-    margin-top: 5px;
+label {
+  margin-bottom: -5px;
+  font-size: 1.2em;
 }
 
-span {
-    padding: 0px 14px;
+#bigText {
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
-#plan {
-    color: rgb(42, 109, 255);
+input {
+  height: 35px;
+  margin-bottom: 10px;
 }
 
-#day {
-    color: black;
-    margin: 0px -10px;
+#btn {
+  height: 45px;
+  background-color: rgb(42, 109, 255);
+  color: white;
+  cursor: pointer;
+  border: 1px solid rgb(42, 109, 255);
+  font-size: 1.2em;
+  margin: 10px 0px 0px;
 }
 
-.container{
-    width: 30%;
-    margin: auto;
-    background-color: white;
-    margin-top: 5%;
+#btn:hover {
+  transform: translateX(2px) translateY(-2px);
+  transition: transform 0.4s;
+}
+
+#cvv {
+  width: 50px;
+  margin: 0px 20px 0px 8px;
+  height: 35px;
+}
+
+#date {
+  width: 140px;
+  margin-left: 10px;
+  height: 40px;
 }

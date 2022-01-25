@@ -5,6 +5,8 @@ body {
   background-color: rgb(255, 253, 247);
 }
 
+/* Navbar */
+
 .navbar {
   width: 100%;
   box-sizing: border-box;
@@ -21,6 +23,7 @@ body {
 #navImg {
   height: 27px;
   width: 116px;
+  margin-top: 2px;
 }
 
 #navLinks {
@@ -70,16 +73,18 @@ span {
   margin: 0px -10px;
 }
 
-#container {
+/* Date container */
+
+#dateContainer {
   width: 100%;
-  border-top: 1px solid rgb(255, 253, 247);
   box-sizing: border-box;
   background-position: 0px;
   margin-bottom: 35px;
   text-align: center;
+  padding-top: 30px;
 }
 
-h1 {
+headingText {
   font-size: 48px;
   color: rgb(48, 48, 48);
   margin-bottom: 78px;
@@ -95,11 +100,15 @@ h1 {
 #dateBox > div {
   border: 1px solid rgb(139, 139, 139);
   font-size: 16px;
-  padding: 14px 20px;
+  padding: 14px 10px;
   margin: 0px 8px -1px 0px;
   background-color: rgb(255, 255, 255);
   text-align: left;
   cursor: pointer;
+}
+
+#dateBox > div > span {
+  font-weight: bold;
 }
 
 #dateBox > div:hover {
@@ -129,13 +138,17 @@ h1 {
   padding-right: 15px;
 }
 
-.text {
+#deliveryText {
   font-size: 12.5px;
   height: 16.8px;
-  font-weight: bold;
   margin-top: 30px;
   margin-bottom: 60px;
   color: rgb(66, 66, 66);
+}
+
+#date {
+  margin-left: -10px;
+  font-weight: bold;
 }
 
 hr {
@@ -143,11 +156,10 @@ hr {
   border-top: 1px solid rgb(231, 229, 229);
 }
 
+
+/* Common questions */
+
 #image {
   text-align: center;
   margin-left: 55px;
-}
-
-#date{
-  margin-left: -10px;
 }

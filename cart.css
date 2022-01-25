@@ -102,20 +102,23 @@ label {
 /* Fixed right side */
 
 #date2 {
-  width: 70%;
+  width: 75%;
   height: 100%;
   margin: 0px;
   box-sizing: border-box;
   text-align: center;
   padding: 15px 0px;
   font-size: 0.85em;
-  letter-spacing: 0.4px;
+}
+
+#dateJs {
+  font-weight: bold;
 }
 
 #clearBtn {
   height: 100%;
   margin: 0px;
-  width: 30%;
+  width: 23%;
   box-sizing: border-box;
   text-align: center;
   padding: 15px 0px;
@@ -123,11 +126,6 @@ label {
   color: rgb(42, 109, 255);
   font-size: 0.85em;
   cursor: pointer;
-}
-
-#dateJs {
-  font-weight: bold;
-  letter-spacing: 0.4px;
 }
 
 .middleDiv {

@@ -34,25 +34,53 @@
     </div>
   </div>
 
-  <!-- Body -->
+  <!-- Date Container -->
 
-  <div id="container">
-    <h1>Choose A Delivery Day</h1>
+  <div id="dateContainer">
+    <div>
+      <h1 id="headingText">Choose A Delivery Day</h1>
+    </div>
 
     <div id="dateBox">
-      <div><strong>Monday,</strong> Jan 24</div>
-      <div><strong>Tuesday,</strong> Jan 25</div>
-      <div><strong>Wednesday,</strong> Jan 26</div>
-      <div><strong>Thursday,</strong> Jan 27</div>
-      <div><strong>Friday,</strong> Jan 28</div>
-      <div><strong>Saturday,</strong> Jan 29</div>
-      <div><strong>Sunday,</strong> Jan 30</div>
-      <div><strong>Monday,</strong> Jan 31</div>
-      <div><strong>Tuesday,</strong> Feb 1</div>
-      <div><strong>Wednesday,</strong> Feb 2</div>
-      <div><strong>Thursday,</strong> Feb 3</div>
-      <div><strong>Friday,</strong> Feb 4</div>
-      <div><strong>Saturday,</strong> Feb 5</div>
+      <div>
+        <span>Monday,</span> Jan 24
+      </div>
+      <div>
+        <span>Tuesday,</span> Jan 25
+      </div>
+      <div>
+        <span>Wednesday,</span> Jan 26
+      </div>
+      <div>
+        <span>Thursday,</span> Jan 27
+      </div>
+      <div>
+        <span>Friday,</span> Jan 28
+      </div>
+      <div>
+        <span>Saturday,</span> Jan 29
+      </div>
+      <div>
+        <span>Sunday,</span> Jan 30
+      </div>
+      <div>
+        <span>Monday,</span> Jan 31
+      </div>
+      <div>
+        <span>Tuesday,</span> Feb 1
+      </div>
+      <div>
+        <span>Wednesday,</span> Feb 2
+      </div>
+      <div>
+        <span>Thursday,</span> Feb 3
+      </div>
+      <div>
+        <span>Friday,</span> Feb 4
+      </div>
+      <div>
+        <span>Saturday,</span> Feb 5
+      </div>
     </div>
     <div class="scrollText">
       Scroll for more delivery dates
@@ -60,11 +88,12 @@
     <div>
       <button id="btn">Next</button>
     </div>
-    <div class="text">
+    <div id="deliveryText">
       <p>First Delivery Date:<span id="date"></span></p>
     </div>
   </div>
   <hr>
+
   <!-- Common Questions -->
 
   <div id="image">
@@ -72,27 +101,6 @@
   </div>
 </body>
 
-<script>
-  document.querySelector("#btn").addEventListener("click", () => {
-    window.location.href = "cart.html";
-  });
-
-  var divs = document.querySelectorAll("#dateBox>div");
-
-  divs.forEach(item => {
-    item.addEventListener("click", () => {
-      item.style.backgroundColor = "rgb(255, 253, 247)";
-      item.style.borderLeft = " 7px solid rgb(42, 109, 255)";
-
-      var date = item.textContent;
-      localStorage.setItem("dateStored",date);
-      console.log(date);
-
-      document.querySelector("#date").textContent = date;
-    });
-  });
-
-
-</script>
+<script src="day.js"></script>
 
 </html>

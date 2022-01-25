@@ -374,7 +374,7 @@ h3 {
 /* Plans Div */
 
 .mealPlan {
-  height: 711px;
+height: 711px;
   background-color: rgb(255, 253, 247);
   text-align: center;
   padding: 63px 0px 0px;
@@ -686,7 +686,7 @@ h3 {
   width: 192px;
 }
 
-/* Last div starts */
+/* Footer */
 
 .lastDiv {
   height: 388px;

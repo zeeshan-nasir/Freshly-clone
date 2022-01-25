@@ -1,30 +1,18 @@
-document.querySelector("form").addEventListener("submit",logIn)
-var userDetails = JSON.parse(localStorage.getItem("signupDetails"))
+document.querySelector("#loginBtn").addEventListener("click", () => {
+    var email = document.querySelector("#email").value;
+    var password = document.querySelector("#password").value;
 
-
- function logIn(event){
- event.preventDefault();
- var userName = document.querySelector("#main").value;
- var pswd = document.querySelector("#pass").value;
- 
-var flag=true;
- for(var i = 0; i<userDetails.length;i++){
-     
-     if(userDetails[i].name==userName&&userDetails[i].password==pswd){
- 
-         window.location.href="plan.html"
-         break;
-      }else{
-          var flag = false;
-      }
+    if (email == "") {
+        alert("Please fill the email id properly!")
     }
+    else if (password == "") {
+        alert("Please fill the password field!")
+    }
+    else if (email !== "" && password !== "") {
+        window.location.href = "plan.html";
+    }
+});
 
-    // if(flag==false){
-    //     alert("password or username was incorrect");
-    // }
-     
-         
-     
- 
-
- }
+document.querySelector("#signUpBtn").addEventListener("click", () => {
+    window.location.href = "signUp.html";
+});
