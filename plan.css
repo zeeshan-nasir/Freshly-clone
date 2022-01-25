@@ -142,13 +142,13 @@ span {
 
 
 #row2 > div {
-  color: rgb(192, 192, 192);
+  color: rgb(219, 219, 219);
   font-size: 1em;
   /* text-decoration: line-through; */
 }
 
 #row2 > #column > p {
-  font-size: 1.1em;
+  font-size: 1em;
   color: rgb(59, 116, 113);
   margin-top: 9px;
   /* text-decoration: none; */
