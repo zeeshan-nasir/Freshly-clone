@@ -25,5 +25,5 @@ function validateInfo(event) {
 
     else if (userName != "" && usercrdNmbr != "" && userCvv != "" && date != "") {
         window.location.href = "otp.html";
-    };
-}
+    }
+};

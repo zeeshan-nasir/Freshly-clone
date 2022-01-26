@@ -404,3 +404,8 @@ data.map(item => {
     cardBox.append(imageDiv, heading, para);
     document.querySelector("#cardsContainer").append(cardBox);
 });
+
+
+document.querySelector("#signUpBtn").addEventListener("click",()=>{
+    window.location.href = "signUp.html";
+})
