@@ -32,6 +32,15 @@ body {
   height: 11px;
 }
 
+#icon2{
+  filter: grayscale(100%);
+}
+
+#icon2:hover{
+  filter: none;
+  transition: filter .3s;
+}
+
 /* Navbar */
 
 .navbar {

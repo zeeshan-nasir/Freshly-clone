@@ -30,6 +30,15 @@ body {
   height: 11px;
 }
 
+#icon2 {
+  filter: grayscale(100%);
+}
+
+#icon2:hover {
+  filter: none;
+  transition: filter 0.3s;
+}
+
 /* Navbar */
 
 .navbar {
@@ -374,7 +383,7 @@ h3 {
 /* Plans Div */
 
 .mealPlan {
-height: 711px;
+  height: 711px;
   background-color: rgb(255, 253, 247);
   text-align: center;
   padding: 63px 0px 0px;

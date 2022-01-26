@@ -50,7 +50,7 @@ cards.map(item => {
     para.textContent = item.calories;
 
     imageDiv.append(img),
-        cardBox.append(imageDiv, heading, para);
+    cardBox.append(imageDiv, heading, para);
     document.querySelector("#cardsContainer").append(cardBox);
 });
 
@@ -107,7 +107,7 @@ planCards.map(item => {
 
     box.append(image, saving, heading);
     document.querySelector(".planContainer").append(box);
-})
+});
 
 
 // Ratings div cards and carousel
