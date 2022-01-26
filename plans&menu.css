@@ -207,7 +207,7 @@ body {
 }
 
 #textDiv {
-  width: 55%;
+  width: 60%;
   padding: 40px 0px;
   margin: auto;
 }
@@ -223,7 +223,6 @@ body {
   letter-spacing: 0.3px;
   font-weight: 540;
   line-height: 1.5em;
-  margin-top: -15px;
   margin-bottom: 35px;
 }
 
@@ -290,9 +289,14 @@ body {
   background-color: rgb(255, 253, 247);
 }
 
-#textDiv > p {
-  width: 80%;
+#textDiv1 > p {
+  width: 45%;
   margin: auto;
+  font-size: 0.8em;
+  color: rgb(51, 51, 51);
+  letter-spacing: 0.3px;
+  font-weight: 540;
+  line-height: 1.5em;
 }
 
 #picsContainer {
@@ -344,7 +348,7 @@ body {
 .faqDiv {
   text-align: center;
   height: 162px;
-  padding-top: 74px;
+  padding-top: 40px;
 }
 
 .faqDiv > h1 {
