@@ -226,6 +226,10 @@ body {
   margin-bottom: 35px;
 }
 
+#foodType {
+  cursor: pointer;
+}
+
 #options > label {
   color: rgb(140, 140, 140);
 }
@@ -279,7 +283,7 @@ body {
   margin-top: -13px;
   text-align: left;
   line-height: 1.4em;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 /* Picture Div */

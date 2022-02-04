@@ -29,6 +29,10 @@ var planCards = [
     },
 ];
 
+document.querySelector("#planBtn").addEventListener("click", () => {
+    window.location.href = "signUp.html";
+});
+
 planCards.map(item => {
     var box = document.createElement("div");
 
@@ -382,30 +386,45 @@ var data = [
     },
 ];
 
+function createCards(data){
+    document.querySelector("#cardsContainer").innerHTML = "";
 
-data.map(item => {
-    var cardBox = document.createElement("div");
-    cardBox.setAttribute("id", "box");
+    data.map(item => {
+        var cardBox = document.createElement("div");
+        cardBox.setAttribute("id", "box");
+    
+        var imageDiv = document.createElement("div");
+    
+        var img = document.createElement("img");
+        img.setAttribute("src", item.image);
+        img.setAttribute("id", "cardImage");
+    
+        var heading = document.createElement("h4");
+        heading.textContent = item.name;
+        heading.setAttribute("id", "cardHeading")
+    
+        var para = document.createElement("p");
+        para.textContent = item.meal;
+    
+        imageDiv.append(img),
+            cardBox.append(imageDiv, heading, para);
+        document.querySelector("#cardsContainer").append(cardBox);
+    });
+}
+createCards(data);
 
-    var imageDiv = document.createElement("div");
 
-    var img = document.createElement("img");
-    img.setAttribute("src", item.image);
-    img.setAttribute("id", "cardImage");
-
-    var heading = document.createElement("h4");
-    heading.textContent = item.name;
-    heading.setAttribute("id", "cardHeading")
-
-    var para = document.createElement("p");
-    para.textContent = item.meal;
-
-    imageDiv.append(img),
-    cardBox.append(imageDiv, heading, para);
-    document.querySelector("#cardsContainer").append(cardBox);
+document.querySelector("#signUpBtn").addEventListener("click", () => {
+    window.location.href = "signUp.html";
 });
 
+// Filter functionality
 
-document.querySelector("#signUpBtn").addEventListener("click",()=>{
-    window.location.href = "signUp.html";
-})
+document.querySelector("#foodType").addEventListener("change", () => {
+    let type = document.querySelector("#foodType").value;
+    let filteredArr = data.filter(item => {
+        return item.category == type;
+    });
+
+    createCards(filteredArr);
+});
