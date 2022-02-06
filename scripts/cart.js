@@ -487,18 +487,15 @@ document.querySelector("#filterSelect").addEventListener("change", () => {
 
 document.querySelector("#nameSelect").addEventListener("change", () => {
     var sortType = document.querySelector("#nameSelect").value;
-    if (sortType == "a-z") {
-        var sortedArr = data.sort((a, b) => {
+    var sortedArr = data.sort((a, b) => {
+        if (sortType == "a-z") {
             return a.name.localeCompare(b.name);
-        });
-        createCards(sortedArr);
-    }
-    else if (sortType == "z-a") {
-        var sortedArr = data.sort((a, b) => {
+        }
+        else if (sortType == "z-a") {
             return b.name.localeCompare(a.name);
-        });
-        createCards(sortedArr);
-    }
+        }
+    });
+    createCards(sortedArr);
 });
 
 // Clear Button
