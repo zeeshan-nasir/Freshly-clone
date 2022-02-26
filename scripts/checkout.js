@@ -29,8 +29,8 @@ document.querySelector("form").addEventListener("submit", event => {
 
     else if (firstName != "" && lastName != "" && address != "" && city != "" && email != "") {
         window.location.href = "payment.html";
-    };
-})
+    }
+});
 
 
 document.querySelector(".totalJs").textContent = `$${JSON.parse(localStorage.getItem("total"))}`;
