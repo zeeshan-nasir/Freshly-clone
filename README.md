@@ -16,7 +16,8 @@
 <h1>Home Page</h1>
 
 <br>
-<img src="https://user-images.githubusercontent.com/93468404/165933200-93824979-f3cb-4c95-a3e1-79ce09e49f0d.png">
+
+<img src="https://user-images.githubusercontent.com/93468404/165936286-e3bcdf2e-4116-4bcf-bc72-46947789c1b3.png">
 <br>
 
 <h1>Store Page</h1>
