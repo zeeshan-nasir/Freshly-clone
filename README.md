@@ -29,7 +29,8 @@
 <h1>Login Page</h1>
 
 <br>
-<img src="https://user-images.githubusercontent.com/93468404/165933249-5e64814e-5eec-451a-a246-bb5362f08f65.png">
+
+<img src="https://user-images.githubusercontent.com/93468404/165933827-559d0aa9-78c3-429e-b372-c4fb9716b9ed.png">
 <br>
 
 <h1>Plans Page</h1>
@@ -40,7 +41,7 @@
 
 <h1>Cart Page</h1>
 <br>
-<img src="https://user-images.githubusercontent.com/93468404/165933635-3d49140b-3214-4485-8051-15ab850c7640.png">
+<img src="https://user-images.githubusercontent.com/93468404/165933963-58e835a4-d293-469a-b080-4de38f072c92.png">
 <br>
 <br>
 
