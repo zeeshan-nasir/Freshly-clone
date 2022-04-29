@@ -1,4 +1,4 @@
-<h1>Feshly</h1><br>
+<h1>Freshly</h1><br>
 • A cloned website of freshly.com, that provides fresh food delivery service in USA. <br>
 • Solo project developed in 5 days.
 <br>
